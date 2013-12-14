@@ -1,0 +1,214 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Arch - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/Arch.res" /d "_DEBUG" /d "_AFXDLL" "E:\Personal Folder\3D Home Decoration\HouseProject\Arch.rc"" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Arch.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Personal Folder\3D Home Decoration\HouseProject\Arch.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\ArchDoc.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\ArchGL.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\ArchView.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Building.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\GL3D\Camera.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Ceiling.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Ceilingdlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\chair_type.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\ChairObject.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\CurvedWall.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\CurvedWallDlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Door.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Element.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\EnBitmap.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Fixture.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\FixtureDialog.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\FixtureWall.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Floor.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\GL3dView.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\MainFrm.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Pillar.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\pillardlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Plane.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\SimpleWall.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Sofadlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Sofaobject.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\sofatype.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\SpiralDlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Spiralstair.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Sport.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\StairDlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Stairs.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\StraightWallDlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Tabledlg.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Tableobject.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\GL3D\Vector3.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\vfd.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Wall.cpp"
+"E:\Personal Folder\3D Home Decoration\HouseProject\Build\Wind.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE8.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Arch.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\Personal Folder\3D Home Decoration\HouseProject\StdAfx.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPE9.tmp" 
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEA.tmp" with contents
+[
+opengl32.lib glu32.lib glaux.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Arch.pdb" /debug /machine:I386 /out:"Debug/Arch.exe" /pdbtype:sept 
+".\Debug\Arch.obj"
+".\Debug\ArchDoc.obj"
+".\Debug\ArchGL.obj"
+".\Debug\ArchView.obj"
+".\Debug\Building.obj"
+".\Debug\Camera.obj"
+".\Debug\Ceiling.obj"
+".\Debug\Ceilingdlg.obj"
+".\Debug\chair_type.obj"
+".\Debug\ChairObject.obj"
+".\Debug\CurvedWall.obj"
+".\Debug\CurvedWallDlg.obj"
+".\Debug\Door.obj"
+".\Debug\Element.obj"
+".\Debug\EnBitmap.obj"
+".\Debug\Fixture.obj"
+".\Debug\FixtureDialog.obj"
+".\Debug\FixtureWall.obj"
+".\Debug\Floor.obj"
+".\Debug\GL3dView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Pillar.obj"
+".\Debug\pillardlg.obj"
+".\Debug\Plane.obj"
+".\Debug\SimpleWall.obj"
+".\Debug\Sofadlg.obj"
+".\Debug\Sofaobject.obj"
+".\Debug\sofatype.obj"
+".\Debug\SpiralDlg.obj"
+".\Debug\Spiralstair.obj"
+".\Debug\Sport.obj"
+".\Debug\StairDlg.obj"
+".\Debug\Stairs.obj"
+".\Debug\StdAfx.obj"
+".\Debug\StraightWallDlg.obj"
+".\Debug\Tabledlg.obj"
+".\Debug\Tableobject.obj"
+".\Debug\Vector3.obj"
+".\Debug\vfd.obj"
+".\Debug\Wall.obj"
+".\Debug\Wind.obj"
+".\Debug\Arch.res"
+]
+Creating command line "link.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Arch.cpp
+ArchDoc.cpp
+ArchGL.cpp
+ArchView.cpp
+Building.cpp
+Ceiling.cpp
+Ceilingdlg.cpp
+chair_type.cpp
+CurvedWall.cpp
+CurvedWallDlg.cpp
+Door.cpp
+EnBitmap.cpp
+Fixture.cpp
+FixtureDialog.cpp
+FixtureWall.cpp
+Floor.cpp
+GL3dView.cpp
+E:\Personal Folder\3D Home Decoration\HouseProject\GL3dView.cpp(1646) : warning C4101: 'a' : unreferenced local variable
+E:\Personal Folder\3D Home Decoration\HouseProject\GL3dView.cpp(1647) : warning C4101: 'b' : unreferenced local variable
+MainFrm.cpp
+Pillar.cpp
+pillardlg.cpp
+Generating Code...
+Compiling...
+Plane.cpp
+SimpleWall.cpp
+sofatype.cpp
+SpiralDlg.cpp
+Spiralstair.cpp
+StairDlg.cpp
+Stairs.cpp
+StraightWallDlg.cpp
+Tabledlg.cpp
+vfd.cpp
+Wind.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+Camera.cpp
+ChairObject.cpp
+Element.cpp
+Sofadlg.cpp
+Sofaobject.cpp
+Sport.cpp
+Tableobject.cpp
+Vector3.cpp
+Wall.cpp
+Linking...
+Creating temporary file "D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEB.tmp" with contents
+[
+/nologo /o"Debug/Arch.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Arch.sbr"
+".\Debug\ArchDoc.sbr"
+".\Debug\ArchGL.sbr"
+".\Debug\ArchView.sbr"
+".\Debug\Building.sbr"
+".\Debug\Camera.sbr"
+".\Debug\Ceiling.sbr"
+".\Debug\Ceilingdlg.sbr"
+".\Debug\chair_type.sbr"
+".\Debug\ChairObject.sbr"
+".\Debug\CurvedWall.sbr"
+".\Debug\CurvedWallDlg.sbr"
+".\Debug\Door.sbr"
+".\Debug\Element.sbr"
+".\Debug\EnBitmap.sbr"
+".\Debug\Fixture.sbr"
+".\Debug\FixtureDialog.sbr"
+".\Debug\FixtureWall.sbr"
+".\Debug\Floor.sbr"
+".\Debug\GL3dView.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\Pillar.sbr"
+".\Debug\pillardlg.sbr"
+".\Debug\Plane.sbr"
+".\Debug\SimpleWall.sbr"
+".\Debug\Sofadlg.sbr"
+".\Debug\Sofaobject.sbr"
+".\Debug\sofatype.sbr"
+".\Debug\SpiralDlg.sbr"
+".\Debug\Spiralstair.sbr"
+".\Debug\Sport.sbr"
+".\Debug\StairDlg.sbr"
+".\Debug\Stairs.sbr"
+".\Debug\StraightWallDlg.sbr"
+".\Debug\Tabledlg.sbr"
+".\Debug\Tableobject.sbr"
+".\Debug\Vector3.sbr"
+".\Debug\vfd.sbr"
+".\Debug\Wall.sbr"
+".\Debug\Wind.sbr"]
+Creating command line "bscmake.exe @D:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPEB.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Arch.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

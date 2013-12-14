@@ -1,0 +1,27 @@
+// Sport.cpp: implementation of the CSport class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "arch.h"
+#include "Sport.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CSport::CSport()
+{
+	
+}
+
+CSport::~CSport()
+{
+
+}

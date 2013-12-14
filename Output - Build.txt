@@ -1,0 +1,6 @@
+--------------------Configuration: Arch - Win32 Debug--------------------
+Linking...
+LINK : fatal error LNK1104: cannot open file "Debug/Arch.exe"
+Error executing link.exe.
+
+Arch.exe - 1 error(s), 0 warning(s)

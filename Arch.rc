@@ -1,0 +1,873 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Arch.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Arch.ico"
+IDR_ARCHTYPE            ICON    DISCARDABLE     "res\\ArchDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TBRAPPMODE          BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_TBRELEMENT          BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\grass.bmp"
+IDR_TBOBJECT            BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TBRAPPMODE TOOLBAR DISCARDABLE  29, 15
+BEGIN
+    BUTTON      ID_EDIT_SELECTELEMENT
+    BUTTON      ID_EDIT_DELETEELEMENT
+    BUTTON      ID_EDIT_MOVEELEMENT
+    BUTTON      ID_EDIT_ROTATEELEMENT
+    BUTTON      ID_EDIT_RESIZEELEMENT
+    SEPARATOR
+    BUTTON      ID_VIEW_2DVIEW
+    BUTTON      ID_VIEW_3DVIEW
+    BUTTON      ID_VIEW_VIEWFLOOR
+    BUTTON      ID_VIEW_NEWFLOOR
+END
+
+IDR_TBRELEMENT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUILD_WALL
+    BUTTON      ID_BUILD_CURVEDWALL
+    BUTTON      ID_BUILD_PILLAR
+    BUTTON      ID_BUILD_STAIRS
+    BUTTON      ID_BUILD_CEIL
+    BUTTON      ID_BBUILD_SPIRALSTAIR
+    BUTTON      ID_BUILD_FIXTURE
+END
+
+IDR_TBOBJECT TOOLBAR DISCARDABLE  43, 15
+BEGIN
+    BUTTON      ID_OBJECT_TABLE
+    BUTTON      ID_OBJECT_CHAIR
+    BUTTON      ID_OBJECT_SOFA
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Select ",                    ID_EDIT_SELECTELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Move Element",               ID_EDIT_MOVEELEMENT
+        MENUITEM "&Rotate Element",             ID_EDIT_ROTATEELEMENT
+        MENUITEM "Resi&ze Element",             ID_EDIT_RESIZEELEMENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Element",             ID_EDIT_DELETEELEMENT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Floor...",                   ID_VIEW_FLOOR
+        MENUITEM SEPARATOR
+        MENUITEM "&3D View",                    ID_VIEW_3DVIEW
+        MENUITEM "&2D View",                    ID_VIEW_2DVIEW
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "&Wall (Straight)",            ID_BUILD_WALL
+        MENUITEM "&Curved Wall",                ID_BUILD_CURVEDWALL
+        MENUITEM "&Pillar",                     ID_BUILD_PILLAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Stairs",                     ID_BUILD_STAIRS
+        MENUITEM SEPARATOR
+        MENUITEM "&Base Plane",                 ID_BUILD_BASEPLANE
+        MENUITEM "C&eilling",                   ID_BUILD_CEILLING
+        MENUITEM SEPARATOR
+        MENUITEM "&Floor ",                     ID_BUILD_FLOOR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Arch...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETEELEMENT,  VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_VIEW_2DVIEW,         VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_3DVIEW,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 267, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "3D Home Decoration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    CTEXT           "3D Home Decoration\n Version 1.0",IDC_STATIC,38,9,119,
+                    19,SS_NOPREFIX
+    CTEXT           "Copyright (C) 2004",IDC_STATIC,38,30,119,8
+    DEFPUSHBUTTON   "OK",IDOK,210,7,50,14,WS_GROUP
+    LTEXT           "Developed by:\n\t     Muhammad Siddiq Butt     &&    Muhammad Saeed Butt",
+                    IDC_STATIC,22,45,238,23
+    CTEXT           "Barani Institute of Information Technology\nUniversity of Arid Agriculture Rawalpindi",
+                    IDC_STATIC,15,74,238,23
+END
+
+IDD_FIXTURE DIALOG DISCARDABLE  0, 0, 429, 223
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,372,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,372,24,50,14
+    GROUPBOX        "Preview",IDC_PREVIEW,7,3,200,123,BS_CENTER
+    PUSHBUTTON      "Button1",IDC_BtnCHK,218,18,50,14
+    LISTBOX         IDC_LISTFIXTURE,7,144,102,72,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FLOOR_VIEW DIALOG DISCARDABLE  0, 0, 187, 58
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Select floor to view"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&View",IDOK,130,10,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,130,30,50,14
+    LTEXT           "Enter Floor #",IDC_STATIC,13,19,42,8
+    EDITTEXT        IDC_EDIT_FLOORNUM,61,17,40,14,ES_RIGHT
+END
+
+IDD_DIALOG_PILLAR DIALOG DISCARDABLE  0, 0, 208, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pillar Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,136,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,117,50,14
+    GROUPBOX        "Pillar Preview",IDC_STATIC_PILLAR_PREVIEW,18,15,59,139,
+                    BS_CENTER
+    PUSHBUTTON      "Color",IDC_BUTTON_COLOR,90,69,50,14
+    GROUPBOX        "Type",IDC_STATIC,88,16,54,47
+    GROUPBOX        "Width",IDC_STATIC,87,99,55,51
+    CONTROL         "Round",IDC_RADIO_TYPE_CYLINDER,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,96,29,37,10
+    CONTROL         "Cubic",IDC_RADIO_TYPE_CUBIC,"Button",BS_AUTORADIOBUTTON,
+                    95,44,34,10
+    CONTROL         "1     feet",IDC_RADIO_WIDTH_1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,91,109,42,10
+    CONTROL         "1.5  feet",IDC_RADIO_WIDTH_1andHalf,"Button",
+                    BS_AUTORADIOBUTTON,91,122,42,10
+    CONTROL         "2     feet",IDC_RADIO_WIDTH_2,"Button",
+                    BS_AUTORADIOBUTTON,91,135,42,10
+END
+
+IDD_DIALOG_STAIR DIALOG DISCARDABLE  0, 0, 215, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Stair Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,157,140,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,157,118,50,14
+    GROUPBOX        "",IDC_STATIC_Preview,7,7,138,147,BS_BITMAP | BS_CENTER
+    CONTROL         "2   feet",IDC_RADIO_WIDTH_2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,155,41,38,10
+    CONTROL         "3   feet",IDC_RADIO_WIDTH_3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,155,54,38,10
+    CONTROL         "4   feet",IDC_RADIO_WIDTH_4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,155,66,38,10
+    GROUPBOX        "Width",IDC_STATIC,151,32,48,49,BS_CENTER
+    PUSHBUTTON      "Color",IDC_BUTTON_COLOR,157,90,50,14
+END
+
+IDD_DIALOG_STRAIGHT_WALL DIALOGEX 0, 0, 290, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Straight Wall Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,221,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,168,50,14
+    GROUPBOX        "",IDC_STATIC_Preview,7,7,134,81,BS_BITMAP | BS_CENTER
+    GROUPBOX        "Fixtures",IDC_STATIC,7,89,134,69,BS_CENTER
+    GROUPBOX        "Side 1",IDC_STATIC,196,19,72,34,BS_CENTER
+    GROUPBOX        "Side 2",IDC_STATIC,195,52,72,34,BS_CENTER
+    GROUPBOX        "Wall Properties",IDC_STATIC,142,7,130,81,BS_CENTER
+    CONTROL         "4 """,IDC_RADIO_WALL_4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,153,32,25,10
+    CONTROL         "9 """,IDC_RADIO_WALL_9,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,153,49,25,10
+    CONTROL         "13 """,IDC_RADIO_WALL_13,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,153,65,29,10
+    GROUPBOX        "Door",IDC_STATIC_DOOR,143,88,64,70,BS_CENTER
+    GROUPBOX        "Window",IDC_STATIC_WINDOW,207,89,64,69,BS_CENTER
+    CONTROL         "2 '  x  7 '",IDC_RADIO_DOOR_2x7,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | WS_TABSTOP,150,
+                    117,42,10
+    CONTROL         "3 '  x  7 '",IDC_RADIO_DOOR_3x7,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,150,129,42,10
+    CONTROL         "4 '  x  7 '",IDC_RADIO_DOOR_4x7,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,150,144,42,10
+    CONTROL         "2 '  x  3 '",IDC_RADIO_WINDOW_2x3,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP | WS_TABSTOP,218,
+                    109,42,10
+    CONTROL         "3 '  x  3 '",IDC_RADIO_WINDOW_3x3,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,218,121,42,10
+    CONTROL         "3 '  x  4 '",IDC_RADIO_WINDOW_3x4,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,218,133,42,10
+    CONTROL         "4 '  x  4 '",IDC_RADIO_WINDOW_4x4,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,218,144,42,10
+    CONTROL         "Color",IDC_RADIO_COL1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,198,29,32,10
+    CONTROL         "Texture",IDC_RADIO_TEXTURE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,197,39,40,10
+    CONTROL         "Color",IDC_RADIO_COL2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,197,61,32,10
+    CONTROL         "Texture",IDC_RADIO_TEXTURE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,197,73,40,10
+    GROUPBOX        "",IDC_STATIC_S1,240,25,25,25
+    GROUPBOX        "",IDC_STATIC_S2,239,59,25,25
+    PUSHBUTTON      "Window Color",IDC_BTN_WINDOW_CLR,74,139,50,14
+    CONTROL         "Door",IDC_CHECK_DOOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,125,31,10
+    CONTROL         "Window",IDC_CHECK_WINDOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,148,42,10
+    PUSHBUTTON      "Door Color",IDC_BTN_DOOR_CLR,74,121,50,14
+    PUSHBUTTON      "<",IDC_BTN_MOVE_LEFT,14,101,21,9
+    PUSHBUTTON      ">",IDC_BTN_MOVE_RIGHT,112,101,21,9
+    CONTROL         "Door",IDC_SELECT_DOOR,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,40,101,34,9,WS_EX_STATICEDGE
+    CONTROL         "Window",IDC_SELECT_WINDOW,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,74,101,34,9,WS_EX_STATICEDGE
+    GROUPBOX        "Width",IDC_STATIC,147,18,46,68,BS_CENTER
+    LTEXT           "Wall Base Point",IDC_STATIC,7,171,56,9
+    EDITTEXT        IDC_BASE_POINT,63,167,22,12,ES_AUTOHSCROLL
+    LTEXT           "Wall Top Point",IDC_STATIC,92,169,48,8
+    EDITTEXT        IDC_TOP_POINT,142,166,23,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_CURVED_WALL DIALOG DISCARDABLE  0, 0, 219, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Curved Wall Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,159,161,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,142,50,14
+    GROUPBOX        "",IDC_STATIC_Preview,163,115,8,9,BS_BITMAP | BS_CENTER | 
+                    NOT WS_VISIBLE
+    GROUPBOX        "Side 1",IDC_STATIC,74,103,54,34,BS_CENTER
+    GROUPBOX        "Side 2",IDC_STATIC,73,138,56,34,BS_CENTER
+    GROUPBOX        "Wall Properties",IDC_STATIC,9,94,135,81,BS_CENTER
+    CONTROL         "4 """,IDC_RADIO_WALL_4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP | WS_TABSTOP,23,122,25,10
+    CONTROL         "9 """,IDC_RADIO_WALL_9,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,23,138,25,10
+    CONTROL         "13 """,IDC_RADIO_WALL_13,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,23,153,29,10
+    CONTROL         "Color",IDC_RADIO_COL1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,75,112,32,10
+    CONTROL         "Texture",IDC_RADIO_TEXTURE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,75,122,40,10
+    CONTROL         "Color",IDC_RADIO_COL2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT | WS_GROUP,75,147,32,10
+    CONTROL         "Texture",IDC_RADIO_TEXTURE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,75,157,40,10
+    GROUPBOX        "",IDC_STATIC_S1,7,7,85,79
+    GROUPBOX        "",IDC_STATIC_S2,109,7,82,78
+    LTEXT           "Side A",IDC_STATIC,36,2,22,8
+    LTEXT           "Side B",IDC_STATIC,139,2,22,8
+    GROUPBOX        "Width",IDC_STATIC,17,103,48,69,BS_CENTER
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 115, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,74,50,14,BS_FLAT
+    PUSHBUTTON      "Cancel",IDCANCEL,58,74,50,14,BS_FLAT
+    LTEXT           "SOFA TYPE",IDC_stypeSTATIC,8,26,40,8
+    COMBOBOX        IDC_stypeCOMBO1,54,23,48,42,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 154, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,110,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,110,50,14
+    CONTROL         "Chair1",IDC_CHAIR1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,12,71,16
+    CONTROL         "Chair2",IDC_CHAIR2,"Button",BS_AUTORADIOBUTTON,12,30,71,
+                    16
+    CONTROL         "Chair3",IDC_CHAIR3,"Button",BS_AUTORADIOBUTTON,11,48,71,
+                    16
+    CONTROL         "Chair4",IDC_CHAIR4,"Button",BS_AUTORADIOBUTTON,12,66,71,
+                    16
+    CONTROL         "Chair5",IDC_CHAIR5,"Button",BS_AUTORADIOBUTTON,12,84,71,
+                    16
+END
+
+IDD_DIALOG_CEILING DIALOG DISCARDABLE  0, 0, 175, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CEILING"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,117,43,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,10,50,14
+    LTEXT           "Height",IDC_STATIC,20,32,22,8
+    EDITTEXT        IDC_CEILING_POINT,45,26,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "COLOR",IDC_CEIL_COLOR,118,27,50,14
+END
+
+IDD_WALL DIALOG DISCARDABLE  0, 0, 258, 126
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,136,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,193,98,50,14
+    EDITTEXT        IDC_Base,53,94,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Top,53,74,51,15,ES_AUTOHSCROLL
+    LTEXT           "Base Point",IDC_STATIC,13,98,37,13
+    LTEXT           "Top Point",IDC_STATIC,13,75,34,12
+    CONTROL         "4''",IDC_RADIO_Width,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,133,26,41,10
+    CONTROL         "9''",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,134,43,41,
+                    10
+    CONTROL         "13''",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,133,57,41,
+                    10
+    GROUPBOX        "Width",IDC_STATIC,126,14,53,57
+    GROUPBOX        "Side A",IDC_STATIC,190,7,49,40
+    GROUPBOX        "Side B",IDC_STATIC,190,48,49,47
+    GROUPBOX        "",IDC_STATIC_Preview1,13,13,48,56,BS_BITMAP | BS_CENTER
+    CONTROL         "Color",IDC_SideA,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    196,17,32,8
+    CONTROL         "Texture",IDC_T1,"Button",BS_AUTORADIOBUTTON,196,30,36,
+                    12
+    CONTROL         "Color",IDC_SideB,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    196,61,36,10
+    CONTROL         "Texture",IDC_T2,"Button",BS_AUTORADIOBUTTON,196,77,38,8
+    GROUPBOX        "",IDC_WallPreB,70,13,47,55,BS_BITMAP | BS_CENTER
+END
+
+IDD_DIALOG_TABLE DIALOG DISCARDABLE  0, 0, 152, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TABLE"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,114,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,114,50,14
+    CONTROL         "Table1",IDC_RADIO_table,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,15,38,10
+    CONTROL         "Table2",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,15,36,38,
+                    10
+    CONTROL         "Table3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,15,55,38,
+                    10
+    CONTROL         "Table4",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,15,74,38,
+                    10
+    CONTROL         "Table5",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,15,93,38,
+                    10
+END
+
+IDD_DIALOG5 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,60,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,67,50,14
+    PUSHBUTTON      "COLOR",IDC_SPIRAL_COLOR,59,21,50,14
+END
+
+IDD_DIALOG_SOFA DIALOG DISCARDABLE  0, 0, 153, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SOFA "
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,42,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,113,50,14
+    CONTROL         "Sofa1",IDC_RADIO_sofa,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,14,11,35,10
+    CONTROL         "Sofa2",IDC_RADIO8,"Button",BS_AUTORADIOBUTTON,14,32,35,
+                    10
+    CONTROL         "Sofa4",IDC_RADIO9,"Button",BS_AUTORADIOBUTTON,13,70,35,
+                    10
+    CONTROL         "Sofa3",IDC_RADIO10,"Button",BS_AUTORADIOBUTTON,13,51,35,
+                    10
+    CONTROL         "Sofa5",IDC_RADIO11,"Button",BS_AUTORADIOBUTTON,13,90,35,
+                    10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Alpha Solutions\0"
+            VALUE "FileDescription", "Architect 3D\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Arch3D\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Arch.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Architect3D\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_FIXTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 216
+    END
+
+    IDD_FLOOR_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_DIALOG_PILLAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_DIALOG_STAIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 154
+    END
+
+    IDD_DIALOG_STRAIGHT_WALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DIALOG_CURVED_WALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIALOG_CEILING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_WALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DIALOG_TABLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DIALOG_SOFA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "/"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Arch"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUILD_WALL           "Consturct Straight Wall\nStraight Wall"
+    ID_VIEW_3DVIEW          "Display the 3D View and Virtual Tour\n 3D Virtual Tour"
+    ID_EDIT_SELECTELEMENT   "Select building object for adjustments\n Select Element"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_DELETEELEMENT   "Removes the selected building element\nRemove Building Object"
+    ID_VIEW_2DVIEW          "Display 2D Drawing\n View 2D"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OBJECT_TABLE         "Table Type\nTABLE"
+    ID_OBJECT_CHAIR         "Chair Type \nCHAIR"
+    ID_OBJECT_SOFA          "Sofa Type\nSOFA"
+    ID_BBUILD_SPIRALSTAIR   "Construct Spiral Stair"
+    ID_BUILD_FIXTURE        "Construct Fixture Wall"
+    ID_VIEW_VIEWFLOOR       "Viewing different floors\\\n View Floors"
+    ID_VIEW_NEWFLOOR        "Construct New Floor\nNew Floor"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Arch.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\Arch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release\Arch.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\Arch.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Release\Arch.exe</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeaderOutputFile>.\Debug\Arch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\Arch.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\Arch.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\Arch.exe</OutputFile>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glaux.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Arch.cpp" />
+    <ClCompile Include="ArchDoc.cpp" />
+    <ClCompile Include="ArchGL.cpp" />
+    <ClCompile Include="ArchView.cpp" />
+    <ClCompile Include="Build\Building.cpp" />
+    <ClCompile Include="GL3D\Camera.cpp" />
+    <ClCompile Include="Ceiling.cpp" />
+    <ClCompile Include="Ceilingdlg.cpp" />
+    <ClCompile Include="chair_type.cpp" />
+    <ClCompile Include="ChairObject.cpp" />
+    <ClCompile Include="Build\CurvedWall.cpp" />
+    <ClCompile Include="CurvedWallDlg.cpp" />
+    <ClCompile Include="Build\Door.cpp" />
+    <ClCompile Include="Build\Element.cpp" />
+    <ClCompile Include="EnBitmap.cpp" />
+    <ClCompile Include="Build\Fixture.cpp" />
+    <ClCompile Include="FixtureDialog.cpp" />
+    <ClCompile Include="FixtureWall.cpp" />
+    <ClCompile Include="Build\Floor.cpp" />
+    <ClCompile Include="GL3dView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Build\Pillar.cpp" />
+    <ClCompile Include="pillardlg.cpp" />
+    <ClCompile Include="Build\Plane.cpp" />
+    <ClCompile Include="SimpleWall.cpp" />
+    <ClCompile Include="Sofadlg.cpp" />
+    <ClCompile Include="Sofaobject.cpp" />
+    <ClCompile Include="sofatype.cpp" />
+    <ClCompile Include="SpiralDlg.cpp" />
+    <ClCompile Include="Spiralstair.cpp" />
+    <ClCompile Include="Sport.cpp" />
+    <ClCompile Include="StairDlg.cpp" />
+    <ClCompile Include="Build\Stairs.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="StraightWallDlg.cpp" />
+    <ClCompile Include="Tabledlg.cpp" />
+    <ClCompile Include="Tableobject.cpp" />
+    <ClCompile Include="GL3D\Vector3.cpp" />
+    <ClCompile Include="vfd.cpp" />
+    <ClCompile Include="Build\Wall.cpp" />
+    <ClCompile Include="Build\Wind.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Arch.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Arch.h" />
+    <ClInclude Include="Build\ArchCons.h" />
+    <ClInclude Include="ArchDoc.h" />
+    <ClInclude Include="Archdraw.h" />
+    <ClInclude Include="ArchGL.h" />
+    <ClInclude Include="ArchView.h" />
+    <ClInclude Include="Build\Building.h" />
+    <ClInclude Include="GL3D\Camera.h" />
+    <ClInclude Include="Ceiling.h" />
+    <ClInclude Include="Ceilingdlg.h" />
+    <ClInclude Include="chair_type.h" />
+    <ClInclude Include="ChairObject.h" />
+    <ClInclude Include="Build\CurvedWall.h" />
+    <ClInclude Include="CurvedWallDlg.h" />
+    <ClInclude Include="Build\Door.h" />
+    <ClInclude Include="Build\Element.h" />
+    <ClInclude Include="EnBitmap.h" />
+    <ClInclude Include="Build\Fixture.h" />
+    <ClInclude Include="FixtureDialog.h" />
+    <ClInclude Include="FixtureWall.h" />
+    <ClInclude Include="Build\Floor.h" />
+    <ClInclude Include="GL3dView.h" />
+    <ClInclude Include="GL3D\glprocs.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Build\Pillar.h" />
+    <ClInclude Include="pillardlg.h" />
+    <ClInclude Include="Build\Plane.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimpleWall.h" />
+    <ClInclude Include="Sofadlg.h" />
+    <ClInclude Include="Sofaobject.h" />
+    <ClInclude Include="sofatype.h" />
+    <ClInclude Include="SpiralDlg.h" />
+    <ClInclude Include="Spiralstair.h" />
+    <ClInclude Include="Sport.h" />
+    <ClInclude Include="StairDlg.h" />
+    <ClInclude Include="Build\Stairs.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StraightWallDlg.h" />
+    <ClInclude Include="Tabledlg.h" />
+    <ClInclude Include="Tableobject.h" />
+    <ClInclude Include="Tex.h" />
+    <ClInclude Include="GL3D\Vector3.h" />
+    <ClInclude Include="vfd.h" />
+    <ClInclude Include="Build\Wall.h" />
+    <ClInclude Include="Build\Wind.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\Arch.ico" />
+    <CustomBuild Include="res\Arch.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\ArchDoc.ico" />
+    <CustomBuild Include="res\bmp00001.bmp" />
+    <CustomBuild Include="res\bmp00002.bmp" />
+    <CustomBuild Include="res\grass.bmp" />
+    <CustomBuild Include="res\harrow.cur" />
+    <CustomBuild Include="res\hcross.cur" />
+    <CustomBuild Include="res\Toolbar.bmp" />
+    <CustomBuild Include="res\toolbar1.bmp" />
+    <CustomBuild Include="Arch.reg">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

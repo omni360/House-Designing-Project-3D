@@ -1,0 +1,170 @@
+# Microsoft Developer Studio Generated Dependency File, included by Arch.mak
+
+.\Arch.cpp : \
+	".\Arch.h"\
+	".\ArchDoc.h"\
+	".\Archdraw.h"\
+	".\ArchView.h"\
+	".\Build\ArchCons.h"\
+	".\Build\Building.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Door.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Floor.h"\
+	".\Build\Pillar.h"\
+	".\Build\Plane.h"\
+	".\Build\Stairs.h"\
+	".\Build\Wall.h"\
+	".\MainFrm.h"\
+	".\PillarProp.h"\
+	".\vfd.h"\
+	
+
+.\Arch.rc : \
+	".\res\Arch.ico"\
+	".\res\Arch.rc2"\
+	".\res\ArchDoc.ico"\
+	".\res\bmp00001.bmp"\
+	".\res\Toolbar.bmp"\
+	".\res\toolbar1.bmp"\
+	
+
+.\ArchDoc.cpp : \
+	".\Arch.h"\
+	".\ArchDoc.h"\
+	".\ArchView.h"\
+	".\Build\ArchCons.h"\
+	".\Build\Building.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Door.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Floor.h"\
+	".\Build\Pillar.h"\
+	".\Build\Plane.h"\
+	".\Build\Stairs.h"\
+	".\Build\Wall.h"\
+	".\FixtureDialog.h"\
+	".\PillarProp.h"\
+	".\vfd.h"\
+	
+
+.\ArchGL.cpp : \
+	".\Arch.h"\
+	".\ArchGL.h"\
+	
+
+.\ArchView.cpp : \
+	".\Arch.h"\
+	".\ArchDoc.h"\
+	".\Archdraw.h"\
+	".\ArchView.h"\
+	".\Build\ArchCons.h"\
+	".\Build\Building.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Door.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Floor.h"\
+	".\Build\Pillar.h"\
+	".\Build\Plane.h"\
+	".\Build\Stairs.h"\
+	".\Build\Wall.h"\
+	".\PillarProp.h"\
+	".\vfd.h"\
+	"c:\program files\microsoft visual studio\vc98\include\gl\glut.h"\
+	
+
+.\Build\Building.cpp : \
+	".\Build\Building.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Floor.h"\
+	".\Build\Pillar.h"\
+	".\Build\Plane.h"\
+	".\Build\Stairs.h"\
+	".\Build\Wall.h"\
+	
+
+.\Build\CurvedWall.cpp : \
+	".\Build\ArchCons.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Wall.h"\
+	
+
+.\Build\Door.cpp : \
+	".\Build\ArchCons.h"\
+	".\Build\Door.h"\
+	".\Build\Fixture.h"\
+	
+
+.\Build\Element.cpp : \
+	".\Build\Element.h"\
+	
+
+.\Build\Fixture.cpp : \
+	".\Build\Fixture.h"\
+	
+
+.\FixtureDialog.cpp : \
+	".\Arch.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Wall.h"\
+	".\FixtureDialog.h"\
+	
+
+.\Build\Floor.cpp : \
+	".\Build\Building.h"\
+	".\Build\CurvedWall.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Floor.h"\
+	".\Build\Pillar.h"\
+	".\Build\Plane.h"\
+	".\Build\Stairs.h"\
+	".\Build\Wall.h"\
+	
+
+.\MainFrm.cpp : \
+	".\Arch.h"\
+	".\arch3dview.h"\
+	".\MainFrm.h"\
+	
+
+.\Build\Pillar.cpp : \
+	".\Build\Element.h"\
+	".\Build\Pillar.h"\
+	
+
+.\PillarProp.cpp : \
+	".\Arch.h"\
+	".\PillarProp.h"\
+	
+
+.\Build\Stairs.cpp : \
+	".\Build\ArchCons.h"\
+	".\Build\Element.h"\
+	".\Build\Stairs.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"c:\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\vfd.cpp : \
+	".\Arch.h"\
+	".\vfd.h"\
+	
+
+.\Build\Wall.cpp : \
+	".\Build\ArchCons.h"\
+	".\Build\Element.h"\
+	".\Build\Fixture.h"\
+	".\Build\Wall.h"\
+	
